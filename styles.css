@@ -11,9 +11,7 @@ body {
 }
 
 .col {
-    border: 1px solid black;
     flex: 1;
-    background-color: darkred;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,4 +30,17 @@ body {
     cursor: pointer;
 }
 
-.col
+.col button {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+.col button:hover {
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
