@@ -22,6 +22,7 @@ document.addEventListener('click', event => {
 })
 
 function copyToClickboard(text) {
+    console.log('hello')
     return navigator.clipboard.writeText(text)
 }
 
@@ -69,4 +70,8 @@ function getColorsFromHash() {
     return []
 }
 
+function alertHint() {
+  alert('Нажмите на пробел для обновления страницы')
+}
+alertHint()
 setRandomColors(true)
